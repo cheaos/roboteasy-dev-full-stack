@@ -12,11 +12,11 @@ Este é um projeto Spring Boot utilizando Java 17, Lombok, Flyway para migraçõ
 
 O projeto utiliza PostgreSQL como banco de dados.
 
-A configuração do banco de dados é feita no arquivo `src/main/resources/application.properties`. Exemplo:
-
+A configuração do banco de dados é feita no arquivo docker-compose`src/main/resources/application.properties`. Exemplo:
+Docker-compose configurado
 ```properties
 # Banco de Dados
-spring.datasource.url=jdbc:postgresql://host.docker.internal:5432/fullstack
+spring.datasource.url=jdbc:postgresql://localhost:5432/fullstack
 spring.datasource.username=postgres
 spring.datasource.password=admin
 
@@ -36,6 +36,7 @@ Para subir a aplicação backend, execute os seguintes comandos no terminal:
 - docker build -t rbt-app .
 - docker run -d -p 8081:8081 --name meu-app-container rbt-app
 Observação: Se alterar a porta do backend, será necessário atualizar as requisições no frontend.
+Ao fazer o login, utilize como o primeiro login usuário admin senha admin
 
 
 
