@@ -17,3 +17,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Acesse localhost:8080/login
